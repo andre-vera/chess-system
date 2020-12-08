@@ -20,11 +20,11 @@ public class Program {
 		UI.clearScreen();
 		UI.printBoard(chessmatch.getPieces());
 		System.out.println();
-		System.out.print("Source position: ");
+		System.out.print("Coordenadas da peca selecionada: ");
 		ChessPosition source = UI.readChessPosition(sc);
 		System.out.println();
 		
-		System.out.print("Target position: ");
+		System.out.print("Coordenadas da posicao-alvo: ");
 		ChessPosition target = UI.readChessPosition(sc);
 		
 		ChessPiece capturedPiece = chessmatch.performChessMove(source, target);
